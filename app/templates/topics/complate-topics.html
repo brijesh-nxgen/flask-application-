@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+Todo
+{% endblock %}
+{% block body %}
+<div class="container-fluid my-4 py-4 bg-white complate">
+	<div class="container mx-auto">
+		{{form.csrf_token()}}
+		<h2><ion-icon name="create-outline"  data-check="true" class='edit btn btn-white shadow-lg'></ion-icon></h2>
+		<b class="text-success success"></b>
+		<b class="text-danger error"></b>
+		<h1 class="title-header text-capitalize mb-4"></h1>
+		<input type="text" class="title input mb-2 text-secondary " required='true' placeholder="add title" name="">
+		<div class="desc mt-2">
+		</div>
+		<div class="temp"></div>
+	</div>
+</div>
+{% endblock %}
+{% block script %}
+<script type="text/javascript" src="{{ url_for('static',filename='js/com.js')}}"></script>
+{% endblock %}

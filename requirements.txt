@@ -1,0 +1,2 @@
+numpy @ file:///home/builder/.termux-build/python-numpy/src
+pyttsx3==2.90

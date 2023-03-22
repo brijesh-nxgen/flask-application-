@@ -1,0 +1,15 @@
+{% extends 'base.html' %}\
+{% block title %}
+Search
+{% endblock %}
+{% block body %}
+<div class="container-fluid  my-4">
+		<div class="mx-auto container mt-4">
+		<ul class="items-lists m-0 p-0">
+			{% for x in check_query %}
+			<li class="bg-dark broder-dark my-2 p-2 rounded d-flex justify-content-between"><a href="/q/{{x['url']}}" class="text-white text-capitalize px-2 navbar-brand" title="">{{x['topic']}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endblock %}

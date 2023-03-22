@@ -1,0 +1,4 @@
+# Ignore log files
+env/
+
+# Ignore build artifacts

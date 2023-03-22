@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+/*	list-style: none;*/
+	text-decoration: none;
+}
+nav>div{
+	display: flex;
+}
+ul.items-lists li{
+	word-break: break-word;
+	width: 100%;
+	overflow: hidden;
+	transition: .5s ease-in-out;
+	list-style: none;
+}
+
+ul.items-lists li:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ul.items-lists li a{
+	word-break: break-word;
+	overflow: hidden;
+	text-transform: capitalize;
+}
+input.title{
+	border: none!important;
+	outline: none!important;
+	font-size: 30px;
+	width: 100%;
+	overflow: hidden;
+}
+.complate  li{
+	margin:10px 0px;
+}
+.ql-editor{
+	max-height: 500px;
+}
